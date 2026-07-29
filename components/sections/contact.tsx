@@ -10,6 +10,7 @@ import {
   MessageCircle,
   Send,
   CheckCircle2,
+  Instagram,
 } from 'lucide-react'
 import { useLanguage } from '@/components/language-provider'
 import { SectionHeading } from '@/components/section-heading'
@@ -33,26 +34,32 @@ export function Contact() {
     {
       icon: Github,
       label: 'GitHub',
-      value: '@luizfernando',
-      href: 'https://github.com/luizfernando',
+      value: 'luiz_dev9',
+      href: 'https://github.com/Luiz-dev9',
+    },
+     {
+      icon: Instagram,
+      label: 'Instagram',
+      value: 'luiz_dev',
+      href: 'https://github.com/Luiz-dev9',
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
       value: '/in/luizfernando',
-      href: 'https://linkedin.com/in/luizfernando',
+      href: 'https://www.linkedin.com/in/luiz-fernando-b17736345?utm_source=share_via&utm_content=profile&utm_medium=member_android',
     },
     {
       icon: Mail,
       label: 'Email',
-      value: 'contato@luizfernando.dev',
-      href: 'mailto:contato@luizfernando.dev',
+      value: 'luizathison54@gmail.com',
+      href: 'mailto:luizathison54@gmail.com',
     },
     {
       icon: MessageCircle,
       label: 'WhatsApp',
-      value: '+55 (00) 00000-0000',
-      href: 'https://wa.me/5500000000000',
+      value: '+55 (81) 98491-0978',
+      href: 'https://wa.me/5581984910978',
     },
   ]
 

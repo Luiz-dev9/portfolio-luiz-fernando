@@ -8,10 +8,10 @@ export function Footer() {
   const { t } = useLanguage()
 
   const socials = [
-    { icon: Github, href: 'https://github.com/luizfernando', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com/Luiz-dev9', label: 'GitHub' },
     {
       icon: Linkedin,
-      href: 'https://linkedin.com/in/luizfernando',
+      href: 'https://www.linkedin.com/in/luiz-fernando-b17736345?utm_source=share_via&utm_content=profile&utm_medium=member_android',
       label: 'LinkedIn',
     },
     { icon: Mail, href: 'mailto:contato@luizfernando.dev', label: 'Email' },

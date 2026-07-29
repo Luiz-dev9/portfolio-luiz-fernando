@@ -1,9 +1,9 @@
-'use client'
+"use client";
 
-import Image from 'next/image'
-import Link from 'next/link'
-import { useEffect, useState } from 'react'
-import { motion } from 'framer-motion'
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import {
   ArrowDown,
   Download,
@@ -11,59 +11,59 @@ import {
   Linkedin,
   Mail,
   Sparkles,
-} from 'lucide-react'
-import { useLanguage } from '@/components/language-provider'
-import { ParticlesBackground } from '@/components/particles-background'
+} from "lucide-react";
+import { useLanguage } from "@/components/language-provider";
+import { ParticlesBackground } from "@/components/particles-background";
 
 const floatingTech = [
-  { name: 'React', className: 'left-0 top-6' },
-  { name: 'Node.js', className: 'right-0 top-16' },
-  { name: 'TypeScript', className: 'left-2 bottom-24' },
-  { name: 'Tailwind', className: 'right-2 bottom-10' },
-  { name: 'MySQL', className: '-left-6 top-1/2' },
-  { name: 'Express', className: '-right-4 top-1/3' },
-]
+  { name: "React", className: "left-0 top-6" },
+  { name: "Node.js", className: "right-0 top-16" },
+  { name: "TypeScript", className: "left-2 bottom-24" },
+  { name: "Tailwind", className: "right-2 bottom-10" },
+  { name: "MySQL", className: "-left-6 top-1/2" },
+  { name: "Express", className: "-right-4 top-1/3" },
+];
 
 function useTypewriter(words: string[]) {
-  const [index, setIndex] = useState(0)
-  const [text, setText] = useState('')
-  const [deleting, setDeleting] = useState(false)
+  const [index, setIndex] = useState(0);
+  const [text, setText] = useState("");
+  const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
-    const current = words[index % words.length]
-    const speed = deleting ? 45 : 90
+    const current = words[index % words.length];
+    const speed = deleting ? 45 : 90;
     const timeout = setTimeout(() => {
       if (!deleting) {
-        setText(current.slice(0, text.length + 1))
+        setText(current.slice(0, text.length + 1));
         if (text.length + 1 === current.length) {
-          setTimeout(() => setDeleting(true), 1400)
+          setTimeout(() => setDeleting(true), 1400);
         }
       } else {
-        setText(current.slice(0, text.length - 1))
+        setText(current.slice(0, text.length - 1));
         if (text.length === 0) {
-          setDeleting(false)
-          setIndex((i) => i + 1)
+          setDeleting(false);
+          setIndex((i) => i + 1);
         }
       }
-    }, speed)
-    return () => clearTimeout(timeout)
-  }, [text, deleting, index, words])
+    }, speed);
+    return () => clearTimeout(timeout);
+  }, [text, deleting, index, words]);
 
-  return text
+  return text;
 }
 
 export function Hero() {
-  const { t } = useLanguage()
-  const typed = useTypewriter(t.hero.roles)
+  const { t } = useLanguage();
+  const typed = useTypewriter(t.hero.roles);
 
   const socials = [
-    { icon: Github, href: 'https://github.com/luizfernando', label: 'GitHub' },
+    { icon: Github, href: "https://github.com/luizfernando", label: "GitHub" },
     {
       icon: Linkedin,
-      href: 'https://linkedin.com/in/luizfernando',
-      label: 'LinkedIn',
+      href: "https://linkedin.com/in/luizfernando",
+      label: "LinkedIn",
     },
-  ]
+  ];
 
   return (
     <section
@@ -101,7 +101,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mt-6 text-balance text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl"
           >
-            {t.hero.greeting}{' '}
+            {t.hero.greeting}{" "}
             <span className="text-gradient">{t.hero.name}</span>
           </motion.h1>
 
@@ -197,12 +197,12 @@ export function Hero() {
           <div className="relative mx-auto aspect-square w-64 overflow-hidden rounded-full border border-border p-1.5 sm:w-72">
             <div className="h-full w-full overflow-hidden rounded-full">
               <Image
-                src="/luiz-fernando.png"
+                src="/eu.png"
                 alt="Foto de Luiz Fernando"
                 width={320}
                 height={320}
                 priority
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover object-top"
               />
             </div>
           </div>
@@ -215,7 +215,7 @@ export function Hero() {
               transition={{
                 duration: 3 + (i % 3),
                 repeat: Infinity,
-                ease: 'easeInOut',
+                ease: "easeInOut",
                 delay: i * 0.3,
               }}
             >
@@ -225,5 +225,5 @@ export function Hero() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

@@ -48,10 +48,76 @@ export const projects: Project[] = [
     },
   },
   {
+  slug: 'nba-store',
+  image: '/projects/NBA.png', // Altere para o caminho da sua imagem
+  github: 'https://github.com/luizfernando', // Altere para o seu repositório
+  demo: 'https://relaxed-nasturtium-65e55f.netlify.app/', // Altere para o link da demonstração
+  year: '2025',
+  tech: ['React', 'Tailwind', 'Node.js', 'MySQL'],
+  title: { pt: 'NBA Store', en: 'NBA Store' },
+  category: { pt: 'E-commerce & Acessórios', en: 'E-commerce & Accessories' },
+  short: {
+    pt: 'Loja online oficial com uma vasta seleção de vestuário, acessórios e colecionáveis da NBA, incluindo camisolas de equipas e equipamentos.',
+    en: 'Official online store with a wide selection of NBA apparel, accessories, and collectibles, including team jerseys and gear.',
+  },
+  overview: {
+    pt: 'Projeto desenvolvido para a NBA Store com o objetivo de oferecer uma experiência de compra online excecional. A aplicação conta com um catálogo abrangente, filtragem avançada por equipa e jogador, personalização de camisolas e uma plataforma de pagamento segura, tudo com foco na paixão dos fãs.',
+    en: 'Project developed for the NBA Store to provide an exceptional online shopping experience. The application features a comprehensive catalog, advanced filtering by team and player, jersey customization, and a secure payment platform, all focused on fan passion.',
+  },
+  features: {
+    pt: [
+      'Catálogo online com categorias de produtos',
+      'Filtragem avançada por equipa e jogador',
+      'Personalização de camisolas',
+      'Integração de pagamentos segura',
+      'Design responsivo e otimizado',
+    ],
+    en: [
+      'Online catalog with product categories',
+      'Advanced filtering by team and player',
+      'Jersey customization',
+      'Secure payment integration',
+      'Responsive and optimized design',
+    ],
+  },
+},
+   {
+  slug: 'burger-house',
+  image: '/projects/humbuguer.png', // Lembre-se de salvar a imagem com esse nome na sua pasta pública
+  github: 'https://github.com/luizfernando',
+  demo: 'https://prime-burguer.netlify.app/',
+  year: '2025',
+  tech: ['React', 'Tailwind', 'Node.js', 'MySQL'],
+  title: { pt: 'Burger House', en: 'Burger House' },
+  category: { pt: 'Cardápio Digital & Delivery', en: 'Digital Menu & Delivery' },
+  short: {
+    pt: 'Site e cardápio digital para a hamburgueria Burger House, com apresentação de combos, adicionais e pedidos online.',
+    en: 'Website and digital menu for Burger House, showcasing combo meals, extra toppings, and online ordering.',
+  },
+  overview: {
+    pt: 'Projeto desenvolvido para a hamburgueria Burger House com o objetivo de modernizar o atendimento. A aplicação conta com um cardápio interativo, destaques para os hambúrgueres artesanais, cálculo de adicionais e canal direto para pedidos via WhatsApp, com foco total na experiência mobile.',
+    en: 'A project built for the Burger House restaurant to modernise customer ordering. The application features an interactive menu, highlights for artisanal burgers, add-on calculations, and a direct WhatsApp ordering channel, with a strong focus on mobile experience.',
+  },
+  features: {
+    pt: [
+      'Cardápio digital interativo com categorias',
+      'Personalização de pedidos e adicionais',
+      'Integração de pedidos direto para o WhatsApp',
+      'Design mobile-first e layout otimizado',
+    ],
+    en: [
+      'Interactive digital menu with categories',
+      'Order customization and extra toppings',
+      'Direct WhatsApp order integration',
+      'Mobile-first design and optimized layout',
+    ],
+  },
+},
+  {
     slug: 'catalogo-perfumaria',
     image: '/projects/perfumaria.png',
     github: 'https://github.com/luizfernando',
-    demo: '#',
+    demo: 'https://teal-starburst-17e358.netlify.app/', //link dos projetos
     year: '2025',
     tech: ['React', 'Express', 'MySQL', 'Tailwind'],
     title: { pt: 'Catálogo de Perfumaria', en: 'Perfumery Catalog' },
