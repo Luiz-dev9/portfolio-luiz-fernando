@@ -41,7 +41,7 @@ export function Contact() {
       icon: Instagram,
       label: 'Instagram',
       value: 'luiz_dev',
-      href: 'https://github.com/Luiz-dev9',
+      href: 'https://www.instagram.com/lz_dev01/',
     },
     {
       icon: Linkedin,
