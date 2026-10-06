@@ -205,7 +205,7 @@ export const projects: Project[] = [
     slug: 'catalogo-perfumaria',
     image: '/projects/perfumaria.png',
     github: 'https://github.com/luizfernando',
-    demo: 'https://teal-starburst-17e358.netlify.app/', //link dos projetos
+    demo: 'https://katiaperfumaria.netlify.app/', //link dos projetos
     year: '2025',
     tech: ['React', 'Express', 'MySQL', 'Tailwind'],
     title: { pt: 'Catálogo de Perfumaria', en: 'Perfumery Catalog' },
