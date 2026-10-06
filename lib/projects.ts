@@ -48,6 +48,94 @@ export const projects: Project[] = [
     },
   },
   {
+  slug: 'acai',
+  image: 'image.png',
+  github: 'https://github.com/Luiz-dev9/acai',
+  demo: 'https://jovial-lolly-161848.netlify.app/',
+  year: '2025',
+  tech: ['React', 'TypeScript', 'Tailwind CSS'],
+  title: {
+    pt: 'Açaí',
+    en: 'Açaí'
+  },
+  category: {
+    pt: 'E-commerce & Alimentação',
+    en: 'E-commerce & Food'
+  },
+  short: {
+    pt: 'Loja online de açaí desenvolvida para oferecer uma experiência rápida e intuitiva de pedidos, com personalização dos produtos e interface responsiva.',
+    en: 'Online açaí shop designed to provide a fast and intuitive ordering experience, with product customization and a responsive interface.'
+  },
+  overview: {
+    pt: 'Projeto desenvolvido para uma loja de açaí com foco em pedidos online e experiência do cliente. A aplicação apresenta um catálogo de produtos, opções de tamanhos e complementos, personalização dos pedidos e uma interface moderna e responsiva, facilitando o processo de escolha e compra.',
+    en: 'Project developed for an açaí shop focused on online ordering and customer experience. The application features a product catalog, size and topping options, order customization, and a modern responsive interface that simplifies the selection and purchasing process.'
+  },
+  features: {
+    pt: [
+      'Catálogo de produtos e opções de açaí',
+      'Personalização dos pedidos',
+      'Seleção de tamanhos e complementos',
+      'Sistema de carrinho de compras',
+      'Resumo dos produtos selecionados',
+      'Interface moderna e responsiva',
+      'Experiência otimizada para pedidos online'
+    ],
+    en: [
+      'Product catalog and açaí options',
+      'Order customization',
+      'Size and topping selection',
+      'Shopping cart system',
+      'Selected products summary',
+      'Modern and responsive interface',
+      'Optimized online ordering experience'
+    ]
+  },
+},
+  {
+  slug: 'nexus',
+  image: '/projects/nexus.png',
+  github: 'https://github.com/Luiz-dev9/nexus',
+  demo: 'https://nexuscloset.vercel.app/',
+  year: '2026',
+  tech: ['React', 'TypeScript', 'Tailwind CSS', 'Node.js'],
+  title: {
+    pt: 'Nexus',
+    en: 'Nexus'
+  },
+  category: {
+    pt: 'E-commerce & Moda',
+    en: 'E-commerce & Fashion'
+  },
+  short: {
+    pt: 'Loja virtual moderna de roupas e acessórios, desenvolvida para proporcionar uma experiência de compra elegante, intuitiva e responsiva.',
+    en: 'Modern online store for clothing and accessories, designed to provide an elegant, intuitive, and responsive shopping experience.'
+  },
+  overview: {
+    pt: 'Projeto desenvolvido para a Nexus, uma loja de roupas e acessórios com foco em moda contemporânea e experiência digital. A aplicação apresenta um catálogo de produtos, navegação por categorias, visualização detalhada dos itens e uma experiência de compra moderna, com interface responsiva e identidade visual própria.',
+    en: 'Project developed for Nexus, a clothing and accessories store focused on contemporary fashion and digital experience. The application features a product catalog, category navigation, detailed product views, and a modern shopping experience with a responsive interface and custom visual identity.'
+  },
+  features: {
+    pt: [
+      'Catálogo de roupas e acessórios',
+      'Navegação por categorias de produtos',
+      'Página com detalhes dos produtos',
+      'Sistema de carrinho de compras',
+      'Seleção de produtos e quantidades',
+      'Interface moderna e responsiva',
+      'Experiência de compra otimizada para desktop e mobile'
+    ],
+    en: [
+      'Clothing and accessories catalog',
+      'Product category navigation',
+      'Detailed product pages',
+      'Shopping cart system',
+      'Product and quantity selection',
+      'Modern and responsive interface',
+      'Optimized shopping experience for desktop and mobile'
+    ]
+  },
+},  
+  {
   slug: 'nba-store',
   image: '/projects/NBA.png', // Altere para o caminho da sua imagem
   github: 'https://github.com/luizfernando', // Altere para o seu repositório
